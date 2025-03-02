@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot de Asesoría</title>
+    <style>
+        /* Estilos opcionales para mejorar la presentación */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .chat-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenido a nuestro Chatbot Asistente sobre Denuncias de Violencia de Política de Género</h1>
+
+    <!-- Chatbot de Dialogflow en modo Messenger (ícono flotante) -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="https://img.freepik.com/premium-vector/cute-smiling-bot-vector-illustration-cartoon_969863-443.jpg"
+      intent="WELCOME"
+      chat-title="AsistenciaVPG"
+      agent-id="e4f01e64-1371-460a-baaf-0f7ef96db3a3"
+      language-code="es"
+    ></df-messenger>
+
+    <!-- Chatbot de Dialogflow incrustado con iframe -->
+    <div class="chat-container">
+        <iframe height="430" width="350" src="https://bot.dialogflow.com/e4f01e64-1371-460a-baaf-0f7ef96db3a3"></iframe>
+    </div>
+
+</body>
+</html>
+
